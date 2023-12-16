@@ -1,28 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <title>ToDoApp</title>
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>To Do List</title>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <!-- fontosome Link For Icons -->
+    <script
+      src="https://kit.fontawesome.com/2d83fcf070.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container">
-      <div id="new_task">
-        <input type="text" placeholder="Task to be done..." />
-        <button id="push">Add</button>
+    <!-- NavBar -->
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <a href="index.html">ToDo<span>App</span></a>
+        </div>
+        <div class="logo">
+          <a href="https://parvezcodes.netlify.app"
+            ><i class="fa-brands fa-product-hunt"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="body__container">
+      <div class="wrapper">
+        <div class="task-input">
+          <img src="bars-icon.svg" alt="icon" />
+          <input type="text" placeholder="Add a new task" />
+        </div>
+        <div class="controls">
+          <div class="filters">
+            <span class="active" id="all">All</span>
+            <span id="pending">Pending</span>
+            <span id="completed">Completed</span>
+          </div>
+          <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
       </div>
-      <div id="tasks"></div>
     </div>
-    <script src="./script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <h3>ToDo<span>App</span></h3>
+        <p>
+          Simplify your tasks with our efficient todo app – the perfect
+          companion for managing your to-dos effortlessly.
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="https://github.com/ParvezCodes" target="_blank">
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/parvez-pathan-947631256"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/prvzz_2522" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/parvez.pathan.9889/"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://parvezcodes.netlify.app/" target="_blank"
+              ><i class="fa-brands fa-product-hunt"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
